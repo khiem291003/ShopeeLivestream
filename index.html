@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee Livestream</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="livestream-box">
+        <h2>Shopee Livestream</h2>
+        <input type="text" class="input-field" id="username" placeholder="Nhập Username">
+        <input type="password" class="input-field" id="password" placeholder="Nhập Password">
+        <input type="file" class="input-field" id="videoFile">
+        
+        <button class="btn btn-start" id="startLive">🎥 Bắt đầu Livestream</button>
+        <a id="shopeeLiveLink" href="https://shopee.vn/live/streamer" target="_blank" style="display: none;"></a>
+                <button class="btn btn-stop" id="stopLive">⏹ Dừng Livestream</button>
+        <button class="btn btn-edit" id="editVideo">🎞 Tự chỉnh sửa video</button>
+        <button class="btn btn-game" id="startGame">🎮 Tổ chức mini game</button>
+        <button class="btn btn-chat" id="chatBot">💬 Chat Bot</button>
+        
+        <div class="loading" id="loading">⏳ Đang kết nối...</div>
+        <p class="status" id="statusText">🔴 Chưa Livestream</p>
+        <p id="timer" style="display: none;">⏳ Thời gian: 00:00</p>
+        <p id="replayCount">🔄 Số lần phát lại: 0</p>
+    </div>
+    <video id="livestreamVideo" width="100%" controls style="display: none;">
+        <source src="./CHĂM EM MỘT ĐỜI - ĐỨC PHÚC x KAI ĐINH x KEWTIIE - OFFICIAL MUSIC VIDEO - VALENTINE 2025.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video.
+    </video>
+    
+    <script src="script.js"></script>
+</body>
+</html>
